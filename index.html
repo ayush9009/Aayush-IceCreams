@@ -1,0 +1,330 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock title %} 
+{% block body %}
+<div class="container-fluid px-0">
+  {% comment %} agr ya conatiner-fluid kardo dun jo images kai side mai spaces
+  ari thi vo hat jagi {% endcomment %}
+  {% comment %} jo bhi yha gadbad hori carousel navbaar ki vo bootstrap 4 se sahi ho jagi bootstrap 4 karke search karlena {% endcomment %}
+  {% comment %} <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="\static\images\1.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="\static\images\2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="\static\images\3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div> {% endcomment %}
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  {% comment %} <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol> {% endcomment %}
+  <ol class="carousel-indicators">
+      <li
+         type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1" 
+        {% comment %} data-bs-target="#carouselExampleCaptions" data-slide-to="0" class="active" aria-label="Slide 1"  {% endcomment %}
+      ></li>
+      <li
+          type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 2"  
+        {% comment %} data-bs-target="#carouselExampleCaptions" data-slide-to="1" class="active"   aria-label="Slide 2" {% endcomment %}
+
+      ></li>
+      <li
+         type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 3" 
+        {% comment %} data-bs-target="#carouselExampleCaptions" data-slide-to="2" class="active"   aria-label="Slide 3" {% endcomment %}
+      ></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      {% comment %} <img src="\static\images\1.jpg" class="d-block w-100" alt="..." /> {% endcomment %}
+      <img class="bd-placeholder-img" width="2000" height="600" src="\static\images\1.jpg" alt="" srcset="">
+      {% comment %} <figure class="mobile-only" style="background-image: url(/content/dam/dreyersgrandicecreaminc/us/en/icecream-com/lifestyle-photography/evergreen/Ice-Cream-Hero-Banner-3000x1354-Mobile.png/jcr:content/renditions/cq5dam.web.1280.1280.jpeg)"></figure> {% endcomment %}
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Label 1</h3>
+        <h4>Inaugrated by Mr AayushSharma</h4>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img class="bd-placeholder-img"  width="2000" height="600" src="\static\images\3.jpg" alt="" srcset="">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Label 2</h3>
+        <h4>Some representative placeholder content for the second label.</h4>
+      </div>
+    </div>
+   
+    <div class="carousel-item">
+      {% comment %} <img src="\static\images\5.jpg" class="d-block w-100" alt="..." /> {% endcomment %}
+      <img class="bd-placeholder-img" width="2000" height="600" src="\static\images\2.jpg" alt="" srcset="">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Label 3</h3>
+        <h4>Dont worry when aayush is there!</h4>
+      </div>
+    </div>
+  </div>
+  <button
+  class="carousel-control-prev"
+  type="button"
+  data-bs-target="#carouselExampleCaptions"
+  data-bs-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselExampleCaptions"
+  data-bs-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+<div class="container my-4">
+  <!-- my-4 ka mtlb hai y-axis pai margin dedo 4 ki mx,ml,mr bhi aap kar soko vo aap ki marzi hogi-->
+ 
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Indian IceCream</strong>
+          <h3 class="mb-0">Oreo and Gems</h3>
+          <div class="mb-1 text-muted">Jan 17</div>
+          <p class="card-text mb-auto">
+            Mondelez India has announced the partnership with Hindustan Unilever Limited. (HUL), bringing together Cadbury Oreo and the iconic Cadbury Gems in a perfect mix  Kwality Walls  dessert range.
+          </p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" width="600" height="200" src="\static\images\15.jpg" alt="" srcset="">
+          {% comment %} <img src="https://source.unsplash.com/300x300/?sun class="d-block w-100" alt="..."> {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-warning">Butlin's IceCream</strong>
+          <h3 class="mb-0">Scoop IceCream</h3>
+          <div class="mb-1 text-muted">Feb 19</div>
+          <p class="mb-auto">
+            There aren't enough food, service, value or atmosphere ratings for Scoop Ice Cream Parlour, United Kingdom yet. Tricks and Treats is New Hampshire's most unique  Be one of the first to write a review!
+          </p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" width="600" height="200" src="\static\images\16.jpg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">American IceCream</strong>
+          <h3 class="mb-0">Crazy Snakes IceCream</h3>
+          <div class="mb-1 text-muted">Mar 21</div>
+          <p class="card-text mb-auto">
+            Whether you're digging into a pint from the freezer or enjoying a cone from the local scoop shop, ice cream is a delicious sweet treat any time of year. But for people with diabetes who have to manages.
+          </p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" width="600" height="200" src="\static\images\19.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div
+        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Paris IceCream</strong>
+          <h3 class="mb-0">Stony Field IceCream</h3>
+          <div class="mb-1 text-muted">Oct 20</div>
+          <p class="mb-auto">
+            There’s nothing like a scoop of the best ice cream to round out the evening (or, let’s be honest, to treat yourself in the middle of the day). Creamy, sweet, and packed with flavor, these top  proveit.
+          </p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" width="600" height="200" src="\static\images\18.jpg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>© 2021-2022 Aayusharma, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+
+{% endblock body %} {% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+
+    <title>Aayush IceCreams</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Aayush IceCreams</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ice Cream</a></li>
+                <li><a class="dropdown-item" href="#">Softy</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Family Pack</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    {% endcomment %} {% comment %} hora kya index.html pai contril aya usne
+    extends karlo base html aur usme sara code same rako bas ye jo varibles ki
+    value humne set kari use base.html mai bej do aur use show kar do {%
+    endcomment %} {% comment %} index.html ne kaha base.html mai jao aur ye sare
+    variables fill kar lo {% endcomment %}
+  </body>
+</html>
